@@ -118,6 +118,7 @@ ofstream err ("/Users/abdurrehman/Documents/CompCode/Error.in");
 #define debug(x)
 #endif
 
+//Print Decs
 void _print(ll t) {err << t;}
 void _print(int t) {err << t;}
 void _print(string t) {err << "\""<< t << "\"";}
@@ -126,7 +127,7 @@ void _print(lld t) {err << t;}
 void _print(double t) {err << t;}
 void _print(ull t) {err << t;}
 
-//decs
+//Template Decs
 template <class T, class V> void _print(pair <T, V> p);
 template <class T> void _print(vector <T> v);
 template <class T> void _print(set <T> v);
@@ -134,7 +135,57 @@ template <class T> void _print(unordered_set <T> v);
 template <class T, class V> void _print(map <T, V> v);
 template <class T, class V> void _print(unordered_map <T, V> v);
 template <class T> void _print(multiset <T> v);
-//imps
+
+//GLOBAL Functions:
+bool comp(pair<ll, ll> a, pair<ll,ll> b);
+ll min(ll a, ll b);
+ll max(ll a, ll b);
+ll gcd(ll a, ll b);
+ll lcm(ll a, ll b);
+void test(); 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+void __SOLVE_t__() {
+        int tt;
+        cin >> tt;
+        while(tt--) 
+        {
+
+        }
+        return;
+}
+
+//***********************************************************************************************************************************
+
+void __SOLVE_1__() {  
+
+
+        err << "\n";
+        return;
+}
+
+//*********************************************************************************************************************************** 
+
+int main()
+{
+        fastio();
+        __SOLVE_t__();
+        //__SOLVE_1__();   
+        //test();
+        return 0;
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+void test() {
+
+        return;
+}
+
+
+//Template Imps
 template <class T, class V> void _print(pair <T, V> p) {err << "{"; _print(p.ff); err << ", "; _print(p.ss); err << "}";}
 template <class T> void _print(vector <T> v) {err << "[ "; for (T i : v) {_print(i); err << " ";} err << "]";}
 template <class T> void _print(set <T> v) {err << "[ "; for (T i : v) {_print(i); err << " ";} err << "]";}
@@ -143,9 +194,7 @@ template <class T> void _print(multiset <T> v) {err << "[ "; for (T i : v) {_pri
 template <class T, class V> void _print(map <T, V> v) {err << "[ "; for (auto i : v) {_print(i); err << " ";} err << "]";}
 template <class T, class V> void _print(unordered_map <T, V> v) {err << "[ "; for (auto i : v) {_print(i); err << " ";} err << "]";}
 
-//|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-//GLOBAL SCOPE:
-
+//General Functions Imp
 bool comp(pair<ll, ll> a, pair<ll,ll> b){
         if(a.first == b.first) 
                 return a.second < b.second;
@@ -170,46 +219,3 @@ ll gcd(ll a, ll b){
 ll lcm(ll a, ll b){
         return (a / gcd(a, b)) *b;
 }
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void __SOLVE_t__() {
-        int tt;
-        cin >> tt;
-        while(tt--) 
-        {
-
-        }
-        return;
-}
-
-//***********************************************************************************************************************************
-
-void __SOLVE_1__() {  
-
-
-        err << "\n";
-        return;
-}
-
-//*********************************************************************************************************************************** 
-void test(); 
-
-int main()
-{
-        fastio();
-        __SOLVE_t__();
-        //__SOLVE_1__();   
-        //test();
-        return 0;
-}
-//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-void test() {
-
-        return;
-}
-
-
-
-
